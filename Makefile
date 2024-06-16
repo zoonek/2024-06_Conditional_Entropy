@@ -1,7 +1,7 @@
 data: raw/data_ml.csv
 
 raw/data_ml.RData: 
-	mkdir -p raw data
+	mkdir -p raw data plots
 	wget -nc -O raw/data_ml.RData https://github.com/shokru/mlfactor.github.io/raw/master/material/data_ml.RData
 
 raw/data_ml.csv: raw/data_ml.RData
